@@ -18,7 +18,10 @@ namespace IntroToOOPSummer17
 
             //the format we use to instantiate an object looks like this:
             //ClassName objectName = new ClassName();
-            Cat mittens = new Cat();
+            Cat firstCat = new Cat();
+
+            firstCat.Name = "Mittens";
+            Console.WriteLine(firstCat.Age);
             
             //To create a new object, we use a special method called a CONSTRUCTOR
 

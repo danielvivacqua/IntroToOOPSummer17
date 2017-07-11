@@ -25,6 +25,11 @@ namespace IntroToOOPSummer17
             get { return this.name; }
             set { this.name = value; }
         }
+
+        public int Age
+        {
+            get { return this.age; }
+        }
         //We also have Behaviors.
         //Methods - repeatable/reusable sections of code - Actions
         //Constructors - specialized methods that are used when instantiating an object
@@ -34,15 +39,23 @@ namespace IntroToOOPSummer17
 
         public Cat()
         {
-            //This is an example of a default constructor. A default constructor takes
-            //no arguments/parameters.
+            
         }
 
+        //Can have as many constructors as you need as long as they each have a unique signature.
+        //By signature, I mean the parameters in the parentheses after the constructor name.
         public Cat(string name, int age, string furColor)
         {
             this.name = name;
             this.age = age;
             this.furColor = furColor;
+        }
+        //Overloading
+
+        public Cat(string name, int age)
+        {
+            this.name = name;
+            this.age = age;
         }
 
         public void Eat()
