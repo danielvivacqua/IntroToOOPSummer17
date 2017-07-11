@@ -21,7 +21,13 @@ namespace IntroToOOPSummer17
             Cat firstCat = new Cat();
 
             firstCat.Name = "Mittens";
-            Console.WriteLine(firstCat.Age);
+            //Console.WriteLine(firstCat.Age);
+
+            Cat secondCat = new Cat("Oz", 3, "Orange and white");
+            secondCat.Name = "Ozzy";
+            Console.WriteLine(secondCat.Name);
+            Console.WriteLine(secondCat.Age);
+            secondCat.Eat();
             
             //To create a new object, we use a special method called a CONSTRUCTOR
 
